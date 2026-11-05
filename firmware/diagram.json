@@ -1,0 +1,75 @@
+{
+  "version": 1,
+  "author": "Antigravity Dual ColdChain with Dual Buzzers",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "board-esp32-devkit-c-v4", "id": "esp", "top": 40, "left": 0, "attrs": {} },
+    
+    { "type": "wokwi-ntc-temperature-sensor", "id": "temp1", "top": -140, "left": -120, "attrs": {} },
+    { "type": "wokwi-slide-switch", "id": "sw_door1", "top": -30, "left": -200, "attrs": {} },
+    { "type": "wokwi-relay-module", "id": "relay1", "top": 70, "left": -230, "attrs": {} },
+    { "type": "wokwi-led", "id": "led_red1", "top": 180, "left": -220, "attrs": { "color": "red", "label": "F1 Alert" } },
+    { "type": "wokwi-buzzer", "id": "buzzer1", "top": 270, "left": -220, "attrs": { "volume": "0.1", "label": "F1 Buzzer" } },
+    
+    { "type": "wokwi-ntc-temperature-sensor", "id": "temp2", "top": -140, "left": 160, "attrs": {} },
+    { "type": "wokwi-slide-switch", "id": "sw_door2", "top": -30, "left": 230, "attrs": {} },
+    { "type": "wokwi-relay-module", "id": "relay2", "top": 70, "left": 230, "attrs": {} },
+    { "type": "wokwi-led", "id": "led_red2", "top": 180, "left": 230, "attrs": { "color": "red", "label": "F2 Alert" } },
+    { "type": "wokwi-buzzer", "id": "buzzer2", "top": 270, "left": 230, "attrs": { "volume": "0.1", "label": "F2 Buzzer" } },
+
+    { "type": "board-ssd1306", "id": "oled", "top": -190, "left": 10, "attrs": { "i2cAddress": "0x3c" } },
+    { "type": "wokwi-pushbutton", "id": "btn_pwr", "top": 280, "left": 10, "attrs": { "color": "red", "label": "Power Fail" } },
+    
+    { "type": "wokwi-resistor", "id": "r1", "top": 180, "left": -160, "attrs": { "value": "220" } },
+    { "type": "wokwi-resistor", "id": "r2", "top": 180, "left": 170, "attrs": { "value": "220" } }
+  ],
+  "connections": [
+    [ "esp:TX", "$serialMonitor:RX", "", [] ],
+    [ "esp:RX", "$serialMonitor:TX", "", [] ],
+
+    [ "esp:GND.1", "oled:GND", "black", [ "v0" ] ],
+    [ "esp:3V3", "oled:VCC", "red", [ "v0" ] ],
+    [ "esp:22", "oled:SCL", "yellow", [ "v0" ] ],
+    [ "esp:21", "oled:SDA", "blue", [ "v0" ] ],
+
+    [ "esp:GND.1", "temp1:GND", "black", [ "v0" ] ],
+    [ "esp:3V3", "temp1:VCC", "red", [ "v0" ] ],
+    [ "esp:34", "temp1:OUT", "green", [ "v0" ] ],
+
+    [ "esp:GND.1", "sw_door1:1", "black", [ "v0" ] ],
+    [ "esp:15", "sw_door1:2", "orange", [ "v0" ] ],
+
+    [ "esp:GND.2", "relay1:GND", "black", [ "v0" ] ],
+    [ "esp:5V", "relay1:VCC", "red", [ "v0" ] ],
+    [ "esp:18", "relay1:IN", "magenta", [ "v0" ] ],
+
+    [ "esp:19", "r1:1", "red", [ "v0" ] ],
+    [ "r1:2", "led_red1:A", "red", [ "v0" ] ],
+    [ "esp:GND.2", "led_red1:C", "black", [ "v0" ] ],
+
+    [ "esp:GND.2", "buzzer1:1", "black", [ "v0" ] ],
+    [ "esp:4", "buzzer1:2", "brown", [ "v0" ] ],
+
+    [ "esp:GND.1", "temp2:GND", "black", [ "v0" ] ],
+    [ "esp:3V3", "temp2:VCC", "red", [ "v0" ] ],
+    [ "esp:35", "temp2:OUT", "green", [ "v0" ] ],
+
+    [ "esp:GND.1", "sw_door2:2", "black", [ "v0" ] ],
+    [ "esp:13", "sw_door2:1", "orange", [ "v0" ] ],
+
+    [ "esp:GND.2", "relay2:GND", "black", [ "v0" ] ],
+    [ "esp:5V", "relay2:VCC", "red", [ "v0" ] ],
+    [ "esp:25", "relay2:IN", "magenta", [ "v0" ] ],
+
+    [ "esp:26", "r2:1", "red", [ "v0" ] ],
+    [ "r2:2", "led_red2:A", "red", [ "v0" ] ],
+    [ "esp:GND.2", "led_red2:C", "black", [ "v0" ] ],
+
+    [ "esp:GND.2", "buzzer2:1", "black", [ "v0" ] ],
+    [ "esp:27", "buzzer2:2", "brown", [ "v0" ] ],
+
+    [ "esp:GND.1", "btn_pwr:1.l", "black", [ "v0" ] ],
+    [ "esp:23", "btn_pwr:2.l", "purple", [ "v0" ] ]
+  ],
+  "dependencies": {}
+}

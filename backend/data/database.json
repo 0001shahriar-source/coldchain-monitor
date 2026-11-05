@@ -1,0 +1,1384 @@
+{
+  "users": [
+    {
+      "id": "u1",
+      "username": "admin",
+      "passwordHash": "$2a$10$CocY1LkTXyp87nYMk2Kbe.g8nuxI73F1tAC2NOz7a8H0QHXZUhQ/m",
+      "role": "Admin"
+    },
+    {
+      "id": "u2",
+      "username": "pharmacist",
+      "passwordHash": "$2a$10$9FAtAE8TlA3IeXbW8daZxehHoy6evPKaQyoQ/5zzgcEPb.jVn5p/2",
+      "role": "Pharmacist"
+    },
+    {
+      "id": "u3",
+      "username": "inspector",
+      "passwordHash": "$2a$10$CbzC2L5Udxf2ODfCKOzZs..g5f397Hqtbq0ILNJjIY4qxwQXSXCyG",
+      "role": "Inspector"
+    }
+  ],
+  "fridges": [
+    {
+      "id": "FRIDGE_01",
+      "name": "Main Vaccine Cooler A",
+      "temp": 7.8,
+      "doorOpen": false,
+      "compressor": true,
+      "power": "AC",
+      "battery": 100,
+      "lastSeen": "2026-11-05T09:03:11.737Z",
+      "healthScore": 100,
+      "predictedTemp": 4.96,
+      "capacity": 10,
+      "recentCoolingRates": [
+        0.09,
+        0.085,
+        0.092,
+        74.041,
+        0.12
+      ],
+      "lastCompTime": 1793869391737
+    },
+    {
+      "id": "FRIDGE_02",
+      "name": "Secondary Medicine Cooler B",
+      "temp": 24,
+      "doorOpen": true,
+      "compressor": true,
+      "power": "AC",
+      "battery": 100,
+      "lastSeen": "2026-11-05T09:07:38.336Z",
+      "healthScore": 100,
+      "predictedTemp": 8.95,
+      "capacity": 10,
+      "recentCoolingRates": [
+        0.08,
+        0.078,
+        0.082,
+        35.252
+      ],
+      "lastCompTime": 1793869658336
+    }
+  ],
+  "batches": [
+    {
+      "id": "BATCH-COV-001",
+      "name": "COVID-19 mRNA Vaccine",
+      "fridgeId": "FRIDGE_01",
+      "totalBudgetMinutes": 60,
+      "exposureMinutes": 10.0832,
+      "expiryDate": "2027-04-15",
+      "discarded": false,
+      "adminReset": false,
+      "createdAt": "2026-11-05T07:43:39.916Z",
+      "status": "Safe"
+    },
+    {
+      "id": "BATCH-INS-002",
+      "name": "Human Regular Insulin",
+      "fridgeId": "FRIDGE_01",
+      "totalBudgetMinutes": 60,
+      "exposureMinutes": 15.5832,
+      "expiryDate": "2026-12-30",
+      "discarded": false,
+      "adminReset": false,
+      "createdAt": "2026-11-05T07:43:39.916Z",
+      "status": "Safe"
+    },
+    {
+      "id": "BATCH-POL-003",
+      "name": "Oral Polio Vaccine (OPV)",
+      "fridgeId": "FRIDGE_01",
+      "totalBudgetMinutes": 60,
+      "exposureMinutes": 5.667,
+      "expiryDate": "2027-08-20",
+      "discarded": false,
+      "adminReset": false,
+      "createdAt": "2026-11-05T07:43:39.916Z",
+      "status": "Safe"
+    }
+  ],
+  "telemetryLogs": [
+    {
+      "deviceId": "FRIDGE_02",
+      "temp": 24,
+      "doorOpen": false,
+      "compressor": true,
+      "power": "AC",
+      "predictedTemp": 15.23,
+      "timestamp": "2026-11-05T08:13:59.466Z"
+    },
+    {
+      "deviceId": "FRIDGE_01",
+      "temp": 24,
+      "doorOpen": false,
+      "compressor": true,
+      "power": "AC",
+      "predictedTemp": 15.23,
+      "timestamp": "2026-11-05T08:14:05.838Z"
+    },
+    {
+      "deviceId": "FRIDGE_01",
+      "temp": 24,
+      "doorOpen": false,
+      "compressor": true,
+      "power": "AC",
+      "predictedTemp": 15.23,
+      "timestamp": "2026-11-05T08:14:13.430Z"
+    },
+    {
+      "deviceId": "FRIDGE_01",
+      "temp": 24,
+      "doorOpen": false,
+      "compressor": true,
+      "power": "AC",
+      "predictedTemp": 15.23,
+      "timestamp": "2026-11-05T08:14:20.781Z"
+    },
+    {
+      "deviceId": "FRIDGE_02",
+      "temp": 24,
+      "doorOpen": false,
+      "compressor": true,
+      "power": "AC",
+      "predictedTemp": 15.23,
+      "timestamp": "2026-11-05T08:14:26.586Z"
+    },
+    {
+      "deviceId": "FRIDGE_01",
+      "temp": 24,
+      "doorOpen": false,
+      "compressor": true,
+      "power": "AC",
+      "predictedTemp": 15.23,
+      "timestamp": "2026-11-05T08:14:31.762Z"
+    },
+    {
+      "deviceId": "FRIDGE_02",
+      "temp": 24,
+      "doorOpen": false,
+      "compressor": true,
+      "power": "AC",
+      "predictedTemp": 8.8,
+      "timestamp": "2026-11-05T08:15:36.648Z"
+    },
+    {
+      "deviceId": "FRIDGE_02",
+      "temp": 24,
+      "doorOpen": false,
+      "compressor": true,
+      "power": "AC",
+      "predictedTemp": 8.8,
+      "timestamp": "2026-11-05T08:15:49.070Z"
+    },
+    {
+      "deviceId": "FRIDGE_01",
+      "temp": 24,
+      "doorOpen": false,
+      "compressor": true,
+      "power": "AC",
+      "predictedTemp": 8.8,
+      "timestamp": "2026-11-05T08:15:57.721Z"
+    },
+    {
+      "deviceId": "FRIDGE_01",
+      "temp": 10.11,
+      "doorOpen": true,
+      "compressor": true,
+      "power": "AC",
+      "predictedTemp": 7.14,
+      "timestamp": "2026-11-05T08:16:09.685Z"
+    },
+    {
+      "deviceId": "FRIDGE_02",
+      "temp": 4.21,
+      "doorOpen": true,
+      "compressor": true,
+      "power": "AC",
+      "predictedTemp": 3.78,
+      "timestamp": "2026-11-05T08:16:17.160Z"
+    },
+    {
+      "deviceId": "FRIDGE_01",
+      "temp": 10.11,
+      "doorOpen": true,
+      "compressor": true,
+      "power": "AC",
+      "predictedTemp": 7.15,
+      "timestamp": "2026-11-05T08:17:01.111Z"
+    },
+    {
+      "deviceId": "FRIDGE_01",
+      "temp": 10.11,
+      "doorOpen": true,
+      "compressor": true,
+      "power": "AC",
+      "predictedTemp": 7.19,
+      "timestamp": "2026-11-05T08:17:07.714Z"
+    },
+    {
+      "deviceId": "FRIDGE_01",
+      "temp": 10.11,
+      "doorOpen": true,
+      "compressor": true,
+      "power": "AC",
+      "predictedTemp": 7.19,
+      "timestamp": "2026-11-05T08:17:14.901Z"
+    },
+    {
+      "deviceId": "FRIDGE_01",
+      "temp": 10.11,
+      "doorOpen": true,
+      "compressor": true,
+      "power": "AC",
+      "predictedTemp": 7.19,
+      "timestamp": "2026-11-05T08:17:23.283Z"
+    },
+    {
+      "deviceId": "FRIDGE_01",
+      "temp": 10.11,
+      "doorOpen": true,
+      "compressor": true,
+      "power": "AC",
+      "predictedTemp": 7.19,
+      "timestamp": "2026-11-05T08:17:34.378Z"
+    },
+    {
+      "deviceId": "FRIDGE_01",
+      "temp": 10.11,
+      "doorOpen": true,
+      "compressor": true,
+      "power": "AC",
+      "predictedTemp": 7.19,
+      "timestamp": "2026-11-05T08:43:52.217Z"
+    },
+    {
+      "deviceId": "FRIDGE_02",
+      "temp": 4.21,
+      "doorOpen": true,
+      "compressor": true,
+      "power": "AC",
+      "predictedTemp": 3.78,
+      "timestamp": "2026-11-05T08:43:55.195Z"
+    },
+    {
+      "deviceId": "FRIDGE_01",
+      "temp": 10.11,
+      "doorOpen": true,
+      "compressor": true,
+      "power": "AC",
+      "predictedTemp": 7.11,
+      "timestamp": "2026-11-05T08:43:58.029Z"
+    },
+    {
+      "deviceId": "FRIDGE_02",
+      "temp": 4.21,
+      "doorOpen": true,
+      "compressor": true,
+      "power": "AC",
+      "predictedTemp": 4.12,
+      "timestamp": "2026-11-05T08:44:01.247Z"
+    },
+    {
+      "deviceId": "FRIDGE_01",
+      "temp": 10.11,
+      "doorOpen": true,
+      "compressor": true,
+      "power": "AC",
+      "predictedTemp": 7.11,
+      "timestamp": "2026-11-05T08:44:06.167Z"
+    },
+    {
+      "deviceId": "FRIDGE_02",
+      "temp": 4.21,
+      "doorOpen": true,
+      "compressor": true,
+      "power": "AC",
+      "predictedTemp": 4.12,
+      "timestamp": "2026-11-05T08:44:09.222Z"
+    },
+    {
+      "deviceId": "FRIDGE_01",
+      "temp": 7.8,
+      "doorOpen": false,
+      "compressor": true,
+      "power": "AC",
+      "predictedTemp": 4.96,
+      "timestamp": "2026-11-05T09:03:20.599Z"
+    },
+    {
+      "deviceId": "FRIDGE_02",
+      "temp": 24,
+      "doorOpen": true,
+      "compressor": true,
+      "power": "AC",
+      "predictedTemp": 8.77,
+      "timestamp": "2026-11-05T09:07:20.623Z"
+    },
+    {
+      "deviceId": "FRIDGE_02",
+      "temp": 24,
+      "doorOpen": true,
+      "compressor": true,
+      "power": "AC",
+      "predictedTemp": 8.95,
+      "timestamp": "2026-11-05T09:07:25.165Z"
+    },
+    {
+      "deviceId": "FRIDGE_02",
+      "temp": 24,
+      "doorOpen": true,
+      "compressor": true,
+      "power": "AC",
+      "predictedTemp": 8.95,
+      "timestamp": "2026-11-05T09:07:30.535Z"
+    },
+    {
+      "deviceId": "FRIDGE_02",
+      "temp": 24,
+      "doorOpen": true,
+      "compressor": true,
+      "power": "AC",
+      "predictedTemp": 8.95,
+      "timestamp": "2026-11-05T09:07:34.180Z"
+    },
+    {
+      "deviceId": "FRIDGE_02",
+      "temp": 24,
+      "doorOpen": true,
+      "compressor": true,
+      "power": "AC",
+      "predictedTemp": 8.95,
+      "timestamp": "2026-11-05T09:07:38.117Z"
+    },
+    {
+      "deviceId": "FRIDGE_02",
+      "temp": 24,
+      "doorOpen": true,
+      "compressor": true,
+      "power": "AC",
+      "predictedTemp": 8.95,
+      "timestamp": "2026-11-05T09:07:42.757Z"
+    }
+  ],
+  "auditLogs": [
+    {
+      "index": 1,
+      "prevHash": "GENESIS_COLDCHAIN_ROOT_HASH",
+      "action": "USER_LOGIN",
+      "details": "User admin logged in as Admin",
+      "actor": "admin",
+      "timestamp": "2026-11-05T07:44:04.211Z",
+      "hash": "b8ae190e0dcace53f27fc45d855a22d4c954b1d81a9aa318e8b02d12bf46face"
+    },
+    {
+      "index": 2,
+      "prevHash": "b8ae190e0dcace53f27fc45d855a22d4c954b1d81a9aa318e8b02d12bf46face",
+      "action": "USER_LOGIN",
+      "details": "User admin logged in as Admin",
+      "actor": "admin",
+      "timestamp": "2026-11-05T08:21:10.527Z",
+      "hash": "8735870a43b1a2904875f6e76bc6bfb939c5f4e2b756fc76645c5577bc0180ff"
+    },
+    {
+      "index": 3,
+      "prevHash": "8735870a43b1a2904875f6e76bc6bfb939c5f4e2b756fc76645c5577bc0180ff",
+      "action": "USER_LOGIN",
+      "details": "User admin logged in as Admin",
+      "actor": "admin",
+      "timestamp": "2026-11-05T08:21:16.133Z",
+      "hash": "d4aba3bd8fcb9ca9c29a7c6d6dafef2a99d5ca93e6b5f046290906df55b16b95"
+    },
+    {
+      "index": 4,
+      "prevHash": "d4aba3bd8fcb9ca9c29a7c6d6dafef2a99d5ca93e6b5f046290906df55b16b95",
+      "action": "SECURITY_REJECT",
+      "details": "Rejected message for FRIDGE_02: Replay/Order attack detected: nonce 1002 is not strictly monotonic (> 1050) for FRIDGE_02",
+      "actor": "FRIDGE_02",
+      "timestamp": "2026-11-05T08:54:38.949Z",
+      "hash": "65e45f1f2b06501b944eedb2d374a372b6986ba61d7c8d81839e5e60d50158ab"
+    },
+    {
+      "index": 5,
+      "prevHash": "65e45f1f2b06501b944eedb2d374a372b6986ba61d7c8d81839e5e60d50158ab",
+      "action": "SECURITY_REJECT",
+      "details": "Rejected message for FRIDGE_01: Replay/Order attack detected: nonce 1001 is not strictly monotonic (> 1049) for FRIDGE_01",
+      "actor": "FRIDGE_01",
+      "timestamp": "2026-11-05T08:54:38.956Z",
+      "hash": "b4b69fe3628c6061ef53979e10a928929b1760347cc59c434c27be864d278101"
+    },
+    {
+      "index": 6,
+      "prevHash": "b4b69fe3628c6061ef53979e10a928929b1760347cc59c434c27be864d278101",
+      "action": "SECURITY_REJECT",
+      "details": "Rejected message for FRIDGE_02: Replay/Order attack detected: nonce 1004 is not strictly monotonic (> 1050) for FRIDGE_02",
+      "actor": "FRIDGE_02",
+      "timestamp": "2026-11-05T08:54:57.731Z",
+      "hash": "f1a925c2d8b1b38948bf74b3f45cc2d5f6a9178f17d33278241b3376f353ecf2"
+    },
+    {
+      "index": 7,
+      "prevHash": "f1a925c2d8b1b38948bf74b3f45cc2d5f6a9178f17d33278241b3376f353ecf2",
+      "action": "SECURITY_REJECT",
+      "details": "Rejected message for FRIDGE_01: Replay/Order attack detected: nonce 1003 is not strictly monotonic (> 1049) for FRIDGE_01",
+      "actor": "FRIDGE_01",
+      "timestamp": "2026-11-05T08:54:57.739Z",
+      "hash": "42b6ffd1fbb985db303c77166a205dc7351bcdea1dc83462b2fc336e5a4d4258"
+    },
+    {
+      "index": 8,
+      "prevHash": "42b6ffd1fbb985db303c77166a205dc7351bcdea1dc83462b2fc336e5a4d4258",
+      "action": "SECURITY_REJECT",
+      "details": "Rejected message for FRIDGE_02: Replay/Order attack detected: nonce 1006 is not strictly monotonic (> 1050) for FRIDGE_02",
+      "actor": "FRIDGE_02",
+      "timestamp": "2026-11-05T08:55:37.409Z",
+      "hash": "477ee767fa69b97d88d8c1bc20549586bd48d5164030fd6877f0257f47ada995"
+    },
+    {
+      "index": 9,
+      "prevHash": "477ee767fa69b97d88d8c1bc20549586bd48d5164030fd6877f0257f47ada995",
+      "action": "SECURITY_REJECT",
+      "details": "Rejected message for FRIDGE_01: Replay/Order attack detected: nonce 1005 is not strictly monotonic (> 1049) for FRIDGE_01",
+      "actor": "FRIDGE_01",
+      "timestamp": "2026-11-05T08:55:37.412Z",
+      "hash": "387496ea933e77650c396de250bd2ccc044279523451671fb65deb4b927c5f9c"
+    },
+    {
+      "index": 10,
+      "prevHash": "387496ea933e77650c396de250bd2ccc044279523451671fb65deb4b927c5f9c",
+      "action": "SECURITY_REJECT",
+      "details": "Rejected message for FRIDGE_02: Replay/Order attack detected: nonce 1008 is not strictly monotonic (> 1050) for FRIDGE_02",
+      "actor": "FRIDGE_02",
+      "timestamp": "2026-11-05T08:55:42.202Z",
+      "hash": "3170bdbea83d18e29b7297389b911adb0565f88f2143779c98b9cc73e3825989"
+    },
+    {
+      "index": 11,
+      "prevHash": "3170bdbea83d18e29b7297389b911adb0565f88f2143779c98b9cc73e3825989",
+      "action": "SECURITY_REJECT",
+      "details": "Rejected message for FRIDGE_01: Replay/Order attack detected: nonce 1007 is not strictly monotonic (> 1049) for FRIDGE_01",
+      "actor": "FRIDGE_01",
+      "timestamp": "2026-11-05T08:55:42.204Z",
+      "hash": "d0b200919ae3a8974a9533062cbeeb96eee81197f2b2be6e586e6cc1711b0909"
+    },
+    {
+      "index": 12,
+      "prevHash": "d0b200919ae3a8974a9533062cbeeb96eee81197f2b2be6e586e6cc1711b0909",
+      "action": "USER_LOGIN",
+      "details": "User admin logged in as Admin",
+      "actor": "admin",
+      "timestamp": "2026-11-05T08:56:30.043Z",
+      "hash": "bbe2221b614397d40e0b9a8cbb02f3c9c245d76b711f62fc3de51086e4aff724"
+    },
+    {
+      "index": 13,
+      "prevHash": "bbe2221b614397d40e0b9a8cbb02f3c9c245d76b711f62fc3de51086e4aff724",
+      "action": "SECURITY_REJECT",
+      "details": "Rejected message for FRIDGE_02: Replay/Order attack detected: nonce 1010 is not strictly monotonic (> 1050) for FRIDGE_02",
+      "actor": "FRIDGE_02",
+      "timestamp": "2026-11-05T08:57:07.360Z",
+      "hash": "4fdcb90f5f5fe0275332520b988c21bcdcfbf47a930aa1b2b55bf36cb48962c1"
+    },
+    {
+      "index": 14,
+      "prevHash": "4fdcb90f5f5fe0275332520b988c21bcdcfbf47a930aa1b2b55bf36cb48962c1",
+      "action": "SECURITY_REJECT",
+      "details": "Rejected message for FRIDGE_01: Replay/Order attack detected: nonce 1009 is not strictly monotonic (> 1049) for FRIDGE_01",
+      "actor": "FRIDGE_01",
+      "timestamp": "2026-11-05T08:57:07.362Z",
+      "hash": "34f1918c2066c168f190373c74acbad08ac78cc6ac8f4d584f30f81071e8a820"
+    },
+    {
+      "index": 15,
+      "prevHash": "34f1918c2066c168f190373c74acbad08ac78cc6ac8f4d584f30f81071e8a820",
+      "action": "SECURITY_REJECT",
+      "details": "Rejected message for FRIDGE_02: Replay/Order attack detected: nonce 1012 is not strictly monotonic (> 1050) for FRIDGE_02",
+      "actor": "FRIDGE_02",
+      "timestamp": "2026-11-05T08:57:12.374Z",
+      "hash": "2262dac0f9762e5e510dce0f545d9221820d785be176c71e6e67fc7497550e64"
+    },
+    {
+      "index": 16,
+      "prevHash": "2262dac0f9762e5e510dce0f545d9221820d785be176c71e6e67fc7497550e64",
+      "action": "SECURITY_REJECT",
+      "details": "Rejected message for FRIDGE_01: Replay/Order attack detected: nonce 1011 is not strictly monotonic (> 1049) for FRIDGE_01",
+      "actor": "FRIDGE_01",
+      "timestamp": "2026-11-05T08:57:12.382Z",
+      "hash": "a96ca47602b6e804d354e4f71bf899081ec2a27c3fd25b1d75a2247e46ba6aff"
+    },
+    {
+      "index": 17,
+      "prevHash": "a96ca47602b6e804d354e4f71bf899081ec2a27c3fd25b1d75a2247e46ba6aff",
+      "action": "SECURITY_REJECT",
+      "details": "Rejected message for FRIDGE_02: Replay/Order attack detected: nonce 1014 is not strictly monotonic (> 1050) for FRIDGE_02",
+      "actor": "FRIDGE_02",
+      "timestamp": "2026-11-05T08:57:17.625Z",
+      "hash": "88fc41b49142698c75e49e0ded5eb0a90f82dff11025c2080ecee379527ddb99"
+    },
+    {
+      "index": 18,
+      "prevHash": "88fc41b49142698c75e49e0ded5eb0a90f82dff11025c2080ecee379527ddb99",
+      "action": "SECURITY_REJECT",
+      "details": "Rejected message for FRIDGE_01: Replay/Order attack detected: nonce 1013 is not strictly monotonic (> 1049) for FRIDGE_01",
+      "actor": "FRIDGE_01",
+      "timestamp": "2026-11-05T08:57:17.626Z",
+      "hash": "93932a387c8b645c18531dcd2a9acd3dd018ed04f5bf7f55091a1a91e228f1db"
+    },
+    {
+      "index": 19,
+      "prevHash": "93932a387c8b645c18531dcd2a9acd3dd018ed04f5bf7f55091a1a91e228f1db",
+      "action": "SECURITY_REJECT",
+      "details": "Rejected message for FRIDGE_02: Replay/Order attack detected: nonce 1016 is not strictly monotonic (> 1050) for FRIDGE_02",
+      "actor": "FRIDGE_02",
+      "timestamp": "2026-11-05T08:57:48.245Z",
+      "hash": "4fb2ae68c6ad71df4d135ac235697dc1eda5125010e7844b9aee9e53eeb8a1d8"
+    },
+    {
+      "index": 20,
+      "prevHash": "4fb2ae68c6ad71df4d135ac235697dc1eda5125010e7844b9aee9e53eeb8a1d8",
+      "action": "SECURITY_REJECT",
+      "details": "Rejected message for FRIDGE_01: Replay/Order attack detected: nonce 1015 is not strictly monotonic (> 1049) for FRIDGE_01",
+      "actor": "FRIDGE_01",
+      "timestamp": "2026-11-05T08:57:48.248Z",
+      "hash": "288e3d4937148b26bd383a9e52fc4b5d2c220898fc1f8543fbcaac37ba5a235d"
+    },
+    {
+      "index": 21,
+      "prevHash": "288e3d4937148b26bd383a9e52fc4b5d2c220898fc1f8543fbcaac37ba5a235d",
+      "action": "SECURITY_REJECT",
+      "details": "Rejected message for FRIDGE_02: Replay/Order attack detected: nonce 1018 is not strictly monotonic (> 1050) for FRIDGE_02",
+      "actor": "FRIDGE_02",
+      "timestamp": "2026-11-05T08:57:54.524Z",
+      "hash": "5c7b6f2991bc18e854cf16b0fd23a8f42fd98651289ca863c1b035edd09f359e"
+    },
+    {
+      "index": 22,
+      "prevHash": "5c7b6f2991bc18e854cf16b0fd23a8f42fd98651289ca863c1b035edd09f359e",
+      "action": "SECURITY_REJECT",
+      "details": "Rejected message for FRIDGE_01: Replay/Order attack detected: nonce 1017 is not strictly monotonic (> 1049) for FRIDGE_01",
+      "actor": "FRIDGE_01",
+      "timestamp": "2026-11-05T08:57:54.525Z",
+      "hash": "f24c2e7a375d54f2f297cb8d56b83182abec56b892ca98d32785a221f18026ed"
+    },
+    {
+      "index": 23,
+      "prevHash": "f24c2e7a375d54f2f297cb8d56b83182abec56b892ca98d32785a221f18026ed",
+      "action": "SECURITY_REJECT",
+      "details": "Rejected message for FRIDGE_02: Replay/Order attack detected: nonce 1020 is not strictly monotonic (> 1050) for FRIDGE_02",
+      "actor": "FRIDGE_02",
+      "timestamp": "2026-11-05T08:57:59.655Z",
+      "hash": "fcdace900c277c7219351ac5151651b817880776cd668645bd65a50ff2afa72d"
+    },
+    {
+      "index": 24,
+      "prevHash": "fcdace900c277c7219351ac5151651b817880776cd668645bd65a50ff2afa72d",
+      "action": "SECURITY_REJECT",
+      "details": "Rejected message for FRIDGE_01: Replay/Order attack detected: nonce 1019 is not strictly monotonic (> 1049) for FRIDGE_01",
+      "actor": "FRIDGE_01",
+      "timestamp": "2026-11-05T08:57:59.656Z",
+      "hash": "88e93313fdaf92157514162dbe0e68afbdbfe485a06b23363e4e4caebaaab601"
+    },
+    {
+      "index": 25,
+      "prevHash": "88e93313fdaf92157514162dbe0e68afbdbfe485a06b23363e4e4caebaaab601",
+      "action": "SECURITY_REJECT",
+      "details": "Rejected message for FRIDGE_02: Replay/Order attack detected: nonce 1022 is not strictly monotonic (> 1050) for FRIDGE_02",
+      "actor": "FRIDGE_02",
+      "timestamp": "2026-11-05T08:58:04.990Z",
+      "hash": "d189e1630abed5d1d26a2f5d8570a09bd55fb17504e1404c88d95ce85ce22f74"
+    },
+    {
+      "index": 26,
+      "prevHash": "d189e1630abed5d1d26a2f5d8570a09bd55fb17504e1404c88d95ce85ce22f74",
+      "action": "SECURITY_REJECT",
+      "details": "Rejected message for FRIDGE_01: Replay/Order attack detected: nonce 1021 is not strictly monotonic (> 1049) for FRIDGE_01",
+      "actor": "FRIDGE_01",
+      "timestamp": "2026-11-05T08:58:04.992Z",
+      "hash": "4368404c056edd79f4289f82812967534bf1bbfe8535c8689f04bc01406f93a5"
+    },
+    {
+      "index": 27,
+      "prevHash": "4368404c056edd79f4289f82812967534bf1bbfe8535c8689f04bc01406f93a5",
+      "action": "SECURITY_REJECT",
+      "details": "Rejected message for FRIDGE_02: Replay/Order attack detected: nonce 1024 is not strictly monotonic (> 1050) for FRIDGE_02",
+      "actor": "FRIDGE_02",
+      "timestamp": "2026-11-05T08:59:25.141Z",
+      "hash": "11e2b30efed87b1e673a2b887de059205986ce0624296c34b5692fe50d8e3c73"
+    },
+    {
+      "index": 28,
+      "prevHash": "11e2b30efed87b1e673a2b887de059205986ce0624296c34b5692fe50d8e3c73",
+      "action": "SECURITY_REJECT",
+      "details": "Rejected message for FRIDGE_01: Replay/Order attack detected: nonce 1023 is not strictly monotonic (> 1049) for FRIDGE_01",
+      "actor": "FRIDGE_01",
+      "timestamp": "2026-11-05T08:59:25.144Z",
+      "hash": "db73bef95c560b5c9fc2b707341ed43983466269a0d801bf3f3abcaacf3d2487"
+    },
+    {
+      "index": 29,
+      "prevHash": "db73bef95c560b5c9fc2b707341ed43983466269a0d801bf3f3abcaacf3d2487",
+      "action": "SECURITY_REJECT",
+      "details": "Rejected message for FRIDGE_02: Replay/Order attack detected: nonce 1026 is not strictly monotonic (> 1050) for FRIDGE_02",
+      "actor": "FRIDGE_02",
+      "timestamp": "2026-11-05T08:59:30.151Z",
+      "hash": "c6ec65d4b33448a566793016898011d41176d3125ec43a1094f80eef323455f4"
+    },
+    {
+      "index": 30,
+      "prevHash": "c6ec65d4b33448a566793016898011d41176d3125ec43a1094f80eef323455f4",
+      "action": "SECURITY_REJECT",
+      "details": "Rejected message for FRIDGE_01: Replay/Order attack detected: nonce 1025 is not strictly monotonic (> 1049) for FRIDGE_01",
+      "actor": "FRIDGE_01",
+      "timestamp": "2026-11-05T08:59:30.153Z",
+      "hash": "32e12d5d7edba1f251d498bff37c11c3a933aff801c7c50b68e8f7e88a9c1795"
+    },
+    {
+      "index": 31,
+      "prevHash": "32e12d5d7edba1f251d498bff37c11c3a933aff801c7c50b68e8f7e88a9c1795",
+      "action": "SECURITY_REJECT",
+      "details": "Rejected message for FRIDGE_02: Replay/Order attack detected: nonce 1028 is not strictly monotonic (> 1050) for FRIDGE_02",
+      "actor": "FRIDGE_02",
+      "timestamp": "2026-11-05T08:59:35.171Z",
+      "hash": "2fd51e1b277258015a164a17aa6ad9a22d4621f1f138909a58009203319a4284"
+    },
+    {
+      "index": 32,
+      "prevHash": "2fd51e1b277258015a164a17aa6ad9a22d4621f1f138909a58009203319a4284",
+      "action": "SECURITY_REJECT",
+      "details": "Rejected message for FRIDGE_01: Replay/Order attack detected: nonce 1027 is not strictly monotonic (> 1049) for FRIDGE_01",
+      "actor": "FRIDGE_01",
+      "timestamp": "2026-11-05T08:59:35.173Z",
+      "hash": "cb5512169b5b8f28a128c201c38c838d7d61e2d3e2a0ba815fb7eda438cd2e85"
+    },
+    {
+      "index": 33,
+      "prevHash": "cb5512169b5b8f28a128c201c38c838d7d61e2d3e2a0ba815fb7eda438cd2e85",
+      "action": "SECURITY_REJECT",
+      "details": "Rejected message for FRIDGE_01: Replay/Order attack detected: nonce 1001 is not strictly monotonic (> 1049) for FRIDGE_01",
+      "actor": "FRIDGE_01",
+      "timestamp": "2026-11-05T09:00:19.037Z",
+      "hash": "2e6546ad75b513a51b52063e3741318ddc31bd105ffd08dbf3996dd7e83b9088"
+    },
+    {
+      "index": 34,
+      "prevHash": "2e6546ad75b513a51b52063e3741318ddc31bd105ffd08dbf3996dd7e83b9088",
+      "action": "SECURITY_REJECT",
+      "details": "Rejected message for FRIDGE_02: Replay/Order attack detected: nonce 1002 is not strictly monotonic (> 1050) for FRIDGE_02",
+      "actor": "FRIDGE_02",
+      "timestamp": "2026-11-05T09:00:19.043Z",
+      "hash": "9e82818adb3ad34d23f8776fdf8e3f212477efa6414dee20a7155fa3ac0430be"
+    },
+    {
+      "index": 35,
+      "prevHash": "9e82818adb3ad34d23f8776fdf8e3f212477efa6414dee20a7155fa3ac0430be",
+      "action": "SECURITY_REJECT",
+      "details": "Rejected message for FRIDGE_01: Replay/Order attack detected: nonce 1003 is not strictly monotonic (> 1049) for FRIDGE_01",
+      "actor": "FRIDGE_01",
+      "timestamp": "2026-11-05T09:00:25.127Z",
+      "hash": "834d6b71e0f585a79927c316ae8ec34457535b351b16e0500ca48126e00911af"
+    },
+    {
+      "index": 36,
+      "prevHash": "834d6b71e0f585a79927c316ae8ec34457535b351b16e0500ca48126e00911af",
+      "action": "SECURITY_REJECT",
+      "details": "Rejected message for FRIDGE_02: Replay/Order attack detected: nonce 1004 is not strictly monotonic (> 1050) for FRIDGE_02",
+      "actor": "FRIDGE_02",
+      "timestamp": "2026-11-05T09:00:25.131Z",
+      "hash": "2917511701f9c897b861879c0326ada9c31f6fd26ea2d94753dc7acec943afda"
+    },
+    {
+      "index": 37,
+      "prevHash": "2917511701f9c897b861879c0326ada9c31f6fd26ea2d94753dc7acec943afda",
+      "action": "SECURITY_REJECT",
+      "details": "Rejected message for FRIDGE_01: Replay/Order attack detected: nonce 1005 is not strictly monotonic (> 1049) for FRIDGE_01",
+      "actor": "FRIDGE_01",
+      "timestamp": "2026-11-05T09:00:30.187Z",
+      "hash": "99abe26d59ceaa7a0ba5fffa348f49054432ce8950e332e7c0c17054143a134b"
+    },
+    {
+      "index": 38,
+      "prevHash": "99abe26d59ceaa7a0ba5fffa348f49054432ce8950e332e7c0c17054143a134b",
+      "action": "SECURITY_REJECT",
+      "details": "Rejected message for FRIDGE_02: Replay/Order attack detected: nonce 1006 is not strictly monotonic (> 1050) for FRIDGE_02",
+      "actor": "FRIDGE_02",
+      "timestamp": "2026-11-05T09:00:30.191Z",
+      "hash": "83fe6ce808a4faba763741eaded63a36900f6d63a961800c40e4717accdb4f53"
+    },
+    {
+      "index": 39,
+      "prevHash": "83fe6ce808a4faba763741eaded63a36900f6d63a961800c40e4717accdb4f53",
+      "action": "SECURITY_REJECT",
+      "details": "Rejected message for FRIDGE_01: Replay/Order attack detected: nonce 1007 is not strictly monotonic (> 1049) for FRIDGE_01",
+      "actor": "FRIDGE_01",
+      "timestamp": "2026-11-05T09:02:33.111Z",
+      "hash": "136d273dbe45486e50979f31ee78705727acb9eea4c55672a966cc2994932770"
+    },
+    {
+      "index": 40,
+      "prevHash": "136d273dbe45486e50979f31ee78705727acb9eea4c55672a966cc2994932770",
+      "action": "SECURITY_REJECT",
+      "details": "Rejected message for FRIDGE_02: Replay/Order attack detected: nonce 1008 is not strictly monotonic (> 1050) for FRIDGE_02",
+      "actor": "FRIDGE_02",
+      "timestamp": "2026-11-05T09:02:33.116Z",
+      "hash": "dd05cd992dc909bb7530934b7dacc751647864123ba4a8df08342a91fb70cdcb"
+    },
+    {
+      "index": 41,
+      "prevHash": "dd05cd992dc909bb7530934b7dacc751647864123ba4a8df08342a91fb70cdcb",
+      "action": "SECURITY_REJECT",
+      "details": "Rejected message for FRIDGE_01: Replay/Order attack detected: nonce 1009 is not strictly monotonic (> 1049) for FRIDGE_01",
+      "actor": "FRIDGE_01",
+      "timestamp": "2026-11-05T09:02:36.837Z",
+      "hash": "0d4cf783d3c8fdb592af24fafb882285be0ad934d8161e9bf89e27120f9ca114"
+    },
+    {
+      "index": 42,
+      "prevHash": "0d4cf783d3c8fdb592af24fafb882285be0ad934d8161e9bf89e27120f9ca114",
+      "action": "SECURITY_REJECT",
+      "details": "Rejected message for FRIDGE_02: Replay/Order attack detected: nonce 1010 is not strictly monotonic (> 1050) for FRIDGE_02",
+      "actor": "FRIDGE_02",
+      "timestamp": "2026-11-05T09:02:36.842Z",
+      "hash": "b744fc61b6a5adaf4ddf9a9df1bb8d12f9816b8b567ca071f2798cbfdae8a909"
+    },
+    {
+      "index": 43,
+      "prevHash": "b744fc61b6a5adaf4ddf9a9df1bb8d12f9816b8b567ca071f2798cbfdae8a909",
+      "action": "SECURITY_REJECT",
+      "details": "Rejected message for FRIDGE_01: Replay/Order attack detected: nonce 1011 is not strictly monotonic (> 1049) for FRIDGE_01",
+      "actor": "FRIDGE_01",
+      "timestamp": "2026-11-05T09:02:57.430Z",
+      "hash": "d0907be37da23fe92b5700260eb6289584b092d09f4cee0f7f6ba8a173a00ba4"
+    },
+    {
+      "index": 44,
+      "prevHash": "d0907be37da23fe92b5700260eb6289584b092d09f4cee0f7f6ba8a173a00ba4",
+      "action": "SECURITY_REJECT",
+      "details": "Rejected message for FRIDGE_01: Replay/Order attack detected: nonce 1012 is not strictly monotonic (> 1049) for FRIDGE_01",
+      "actor": "FRIDGE_01",
+      "timestamp": "2026-11-05T09:02:57.433Z",
+      "hash": "f764db79618144d997b44a839049617865f7c11848bffb3ae0e2d51924c79238"
+    },
+    {
+      "index": 45,
+      "prevHash": "f764db79618144d997b44a839049617865f7c11848bffb3ae0e2d51924c79238",
+      "action": "SECURITY_REJECT",
+      "details": "Rejected message for FRIDGE_02: Replay/Order attack detected: nonce 1013 is not strictly monotonic (> 1050) for FRIDGE_02",
+      "actor": "FRIDGE_02",
+      "timestamp": "2026-11-05T09:02:57.436Z",
+      "hash": "3ef6b9907d68d0ea49974690dfd690de07a6419a811bacfc7f5b57ac1306dc44"
+    },
+    {
+      "index": 46,
+      "prevHash": "3ef6b9907d68d0ea49974690dfd690de07a6419a811bacfc7f5b57ac1306dc44",
+      "action": "SECURITY_REJECT",
+      "details": "Rejected message for FRIDGE_02: Replay/Order attack detected: nonce 1014 is not strictly monotonic (> 1050) for FRIDGE_02",
+      "actor": "FRIDGE_02",
+      "timestamp": "2026-11-05T09:03:00.555Z",
+      "hash": "ed670959ded053ebeaf5e54ea5d64eec22fa2a517a14b7581c185a002a7f3a3e"
+    },
+    {
+      "index": 47,
+      "prevHash": "ed670959ded053ebeaf5e54ea5d64eec22fa2a517a14b7581c185a002a7f3a3e",
+      "action": "SECURITY_REJECT",
+      "details": "Rejected message for FRIDGE_01: Replay/Order attack detected: nonce 1015 is not strictly monotonic (> 99999) for FRIDGE_01",
+      "actor": "FRIDGE_01",
+      "timestamp": "2026-11-05T09:03:42.195Z",
+      "hash": "f4b6fe2447df599c8fc4a620ed045c2e1d179f9fb5166ac8aaf2916832973cc3"
+    },
+    {
+      "index": 48,
+      "prevHash": "f4b6fe2447df599c8fc4a620ed045c2e1d179f9fb5166ac8aaf2916832973cc3",
+      "action": "SECURITY_REJECT",
+      "details": "Rejected message for FRIDGE_02: Replay/Order attack detected: nonce 1016 is not strictly monotonic (> 1050) for FRIDGE_02",
+      "actor": "FRIDGE_02",
+      "timestamp": "2026-11-05T09:03:42.197Z",
+      "hash": "e1162f8cdbc2adeddd4c59694709fc3ea3c59fd149193cf86165a0d06b840643"
+    },
+    {
+      "index": 49,
+      "prevHash": "e1162f8cdbc2adeddd4c59694709fc3ea3c59fd149193cf86165a0d06b840643",
+      "action": "SECURITY_REJECT",
+      "details": "Rejected message for FRIDGE_01: Replay/Order attack detected: nonce 1017 is not strictly monotonic (> 99999) for FRIDGE_01",
+      "actor": "FRIDGE_01",
+      "timestamp": "2026-11-05T09:03:47.329Z",
+      "hash": "4c93c5f440d8717de45534e1b76171a24cd9482e3554477347c4ae5b475a5c2f"
+    },
+    {
+      "index": 50,
+      "prevHash": "4c93c5f440d8717de45534e1b76171a24cd9482e3554477347c4ae5b475a5c2f",
+      "action": "SECURITY_REJECT",
+      "details": "Rejected message for FRIDGE_02: Replay/Order attack detected: nonce 1018 is not strictly monotonic (> 1050) for FRIDGE_02",
+      "actor": "FRIDGE_02",
+      "timestamp": "2026-11-05T09:03:47.331Z",
+      "hash": "3b3159717ee670ef451381b97e8af4065bcbc6ec4fcefdc84226906d56083187"
+    },
+    {
+      "index": 51,
+      "prevHash": "3b3159717ee670ef451381b97e8af4065bcbc6ec4fcefdc84226906d56083187",
+      "action": "SECURITY_REJECT",
+      "details": "Rejected message for FRIDGE_01: Replay/Order attack detected: nonce 1019 is not strictly monotonic (> 99999) for FRIDGE_01",
+      "actor": "FRIDGE_01",
+      "timestamp": "2026-11-05T09:03:52.531Z",
+      "hash": "827ba5f84d018456aae49ef4ebcf2f2ea909d170980fd0568da65281eda0a579"
+    },
+    {
+      "index": 52,
+      "prevHash": "827ba5f84d018456aae49ef4ebcf2f2ea909d170980fd0568da65281eda0a579",
+      "action": "SECURITY_REJECT",
+      "details": "Rejected message for FRIDGE_02: Replay/Order attack detected: nonce 1020 is not strictly monotonic (> 1050) for FRIDGE_02",
+      "actor": "FRIDGE_02",
+      "timestamp": "2026-11-05T09:03:52.532Z",
+      "hash": "5c9bbb116e5b83670d8002d3ae64962c765efe398308f50189a5b7f22e4f01c6"
+    },
+    {
+      "index": 53,
+      "prevHash": "5c9bbb116e5b83670d8002d3ae64962c765efe398308f50189a5b7f22e4f01c6",
+      "action": "SECURITY_REJECT",
+      "details": "Rejected message for FRIDGE_01: Replay/Order attack detected: nonce 1021 is not strictly monotonic (> 99999) for FRIDGE_01",
+      "actor": "FRIDGE_01",
+      "timestamp": "2026-11-05T09:03:57.628Z",
+      "hash": "543efbe13ce10b78da32169c139b4c37942216ad30ac9a566f71e33958352de6"
+    },
+    {
+      "index": 54,
+      "prevHash": "543efbe13ce10b78da32169c139b4c37942216ad30ac9a566f71e33958352de6",
+      "action": "SECURITY_REJECT",
+      "details": "Rejected message for FRIDGE_02: Replay/Order attack detected: nonce 1022 is not strictly monotonic (> 1050) for FRIDGE_02",
+      "actor": "FRIDGE_02",
+      "timestamp": "2026-11-05T09:03:57.631Z",
+      "hash": "5303286532b77a27ee96792ce4b3625eaff8dce115e306db443b165ee135f85d"
+    },
+    {
+      "index": 55,
+      "prevHash": "5303286532b77a27ee96792ce4b3625eaff8dce115e306db443b165ee135f85d",
+      "action": "SECURITY_REJECT",
+      "details": "Rejected message for FRIDGE_01: Replay/Order attack detected: nonce 1023 is not strictly monotonic (> 99999) for FRIDGE_01",
+      "actor": "FRIDGE_01",
+      "timestamp": "2026-11-05T09:04:02.777Z",
+      "hash": "346e727ce093acce0757386efae86e8ae4d1a95c2898345e41c6bee276fb29dd"
+    },
+    {
+      "index": 56,
+      "prevHash": "346e727ce093acce0757386efae86e8ae4d1a95c2898345e41c6bee276fb29dd",
+      "action": "SECURITY_REJECT",
+      "details": "Rejected message for FRIDGE_02: Replay/Order attack detected: nonce 1024 is not strictly monotonic (> 1050) for FRIDGE_02",
+      "actor": "FRIDGE_02",
+      "timestamp": "2026-11-05T09:04:02.779Z",
+      "hash": "00c2dd6683153b0c6e62ec00f70b93abec4002fb7f63fc87f2b525d51f8721a4"
+    },
+    {
+      "index": 57,
+      "prevHash": "00c2dd6683153b0c6e62ec00f70b93abec4002fb7f63fc87f2b525d51f8721a4",
+      "action": "SECURITY_REJECT",
+      "details": "Rejected message for FRIDGE_01: Replay/Order attack detected: nonce 1025 is not strictly monotonic (> 99999) for FRIDGE_01",
+      "actor": "FRIDGE_01",
+      "timestamp": "2026-11-05T09:04:07.937Z",
+      "hash": "c5110d1b85d6373c215aa6077b0f38137de8ad0e663c08eb85288216759f4d58"
+    },
+    {
+      "index": 58,
+      "prevHash": "c5110d1b85d6373c215aa6077b0f38137de8ad0e663c08eb85288216759f4d58",
+      "action": "SECURITY_REJECT",
+      "details": "Rejected message for FRIDGE_02: Replay/Order attack detected: nonce 1026 is not strictly monotonic (> 1050) for FRIDGE_02",
+      "actor": "FRIDGE_02",
+      "timestamp": "2026-11-05T09:04:07.939Z",
+      "hash": "43d2ffc5c7f55e16eb2f52bed4cbd55b7ef40d210657d002d8a5d8fd180f0893"
+    },
+    {
+      "index": 59,
+      "prevHash": "43d2ffc5c7f55e16eb2f52bed4cbd55b7ef40d210657d002d8a5d8fd180f0893",
+      "action": "SECURITY_REJECT",
+      "details": "Rejected message for FRIDGE_01: Replay/Order attack detected: nonce 1027 is not strictly monotonic (> 99999) for FRIDGE_01",
+      "actor": "FRIDGE_01",
+      "timestamp": "2026-11-05T09:04:13.310Z",
+      "hash": "0da826e69e5ac486e7d201e777c73ea7a700e7adeaf70fa172386a92c15842a6"
+    },
+    {
+      "index": 60,
+      "prevHash": "0da826e69e5ac486e7d201e777c73ea7a700e7adeaf70fa172386a92c15842a6",
+      "action": "SECURITY_REJECT",
+      "details": "Rejected message for FRIDGE_02: Replay/Order attack detected: nonce 1028 is not strictly monotonic (> 1050) for FRIDGE_02",
+      "actor": "FRIDGE_02",
+      "timestamp": "2026-11-05T09:04:13.312Z",
+      "hash": "33971f1b6151073b7ff5e155b4740639bb89b93aabf0f8d40ffe3939fe709f30"
+    },
+    {
+      "index": 61,
+      "prevHash": "33971f1b6151073b7ff5e155b4740639bb89b93aabf0f8d40ffe3939fe709f30",
+      "action": "SECURITY_REJECT",
+      "details": "Rejected message for FRIDGE_01: Replay/Order attack detected: nonce 1029 is not strictly monotonic (> 99999) for FRIDGE_01",
+      "actor": "FRIDGE_01",
+      "timestamp": "2026-11-05T09:04:18.820Z",
+      "hash": "68d77d28469b5776a3050b076314ba15f4650c18739e3175d0999fbe636e5407"
+    },
+    {
+      "index": 62,
+      "prevHash": "68d77d28469b5776a3050b076314ba15f4650c18739e3175d0999fbe636e5407",
+      "action": "SECURITY_REJECT",
+      "details": "Rejected message for FRIDGE_02: Replay/Order attack detected: nonce 1030 is not strictly monotonic (> 1050) for FRIDGE_02",
+      "actor": "FRIDGE_02",
+      "timestamp": "2026-11-05T09:04:18.823Z",
+      "hash": "c5b4621e10bd94d5c79b4454f6fd2b61cec4f7f02405b5456edc24c936f7f59b"
+    },
+    {
+      "index": 63,
+      "prevHash": "c5b4621e10bd94d5c79b4454f6fd2b61cec4f7f02405b5456edc24c936f7f59b",
+      "action": "SECURITY_REJECT",
+      "details": "Rejected message for FRIDGE_01: Replay/Order attack detected: nonce 1031 is not strictly monotonic (> 99999) for FRIDGE_01",
+      "actor": "FRIDGE_01",
+      "timestamp": "2026-11-05T09:04:24.506Z",
+      "hash": "970f2b90255bac142e949de6009f237de661a076e45ddbb8bdb766ceec2b9484"
+    },
+    {
+      "index": 64,
+      "prevHash": "970f2b90255bac142e949de6009f237de661a076e45ddbb8bdb766ceec2b9484",
+      "action": "SECURITY_REJECT",
+      "details": "Rejected message for FRIDGE_02: Replay/Order attack detected: nonce 1032 is not strictly monotonic (> 1050) for FRIDGE_02",
+      "actor": "FRIDGE_02",
+      "timestamp": "2026-11-05T09:04:24.508Z",
+      "hash": "633a059dc9fc514cf52f8b5a51fb8c13abd1d821f30709ad11d1a830d1a2a98e"
+    },
+    {
+      "index": 65,
+      "prevHash": "633a059dc9fc514cf52f8b5a51fb8c13abd1d821f30709ad11d1a830d1a2a98e",
+      "action": "SECURITY_REJECT",
+      "details": "Rejected message for FRIDGE_01: Replay/Order attack detected: nonce 1033 is not strictly monotonic (> 99999) for FRIDGE_01",
+      "actor": "FRIDGE_01",
+      "timestamp": "2026-11-05T09:04:29.850Z",
+      "hash": "5b8d24ba7af923522281d13efd675d174ce824bd2ba7b3c7acab41b15ac70561"
+    },
+    {
+      "index": 66,
+      "prevHash": "5b8d24ba7af923522281d13efd675d174ce824bd2ba7b3c7acab41b15ac70561",
+      "action": "SECURITY_REJECT",
+      "details": "Rejected message for FRIDGE_02: Replay/Order attack detected: nonce 1034 is not strictly monotonic (> 1050) for FRIDGE_02",
+      "actor": "FRIDGE_02",
+      "timestamp": "2026-11-05T09:04:29.853Z",
+      "hash": "94ece0e70f0ded9f3437b10e55e068fc2bc59f25a99a829879681450d695284f"
+    },
+    {
+      "index": 67,
+      "prevHash": "94ece0e70f0ded9f3437b10e55e068fc2bc59f25a99a829879681450d695284f",
+      "action": "SECURITY_REJECT",
+      "details": "Rejected message for FRIDGE_01: Replay/Order attack detected: nonce 1035 is not strictly monotonic (> 99999) for FRIDGE_01",
+      "actor": "FRIDGE_01",
+      "timestamp": "2026-11-05T09:04:34.820Z",
+      "hash": "7ea8190fdea224553e830b6283e9f84b03462cabc71c81134b3f1b0c205137f9"
+    },
+    {
+      "index": 68,
+      "prevHash": "7ea8190fdea224553e830b6283e9f84b03462cabc71c81134b3f1b0c205137f9",
+      "action": "SECURITY_REJECT",
+      "details": "Rejected message for FRIDGE_02: Replay/Order attack detected: nonce 1036 is not strictly monotonic (> 1050) for FRIDGE_02",
+      "actor": "FRIDGE_02",
+      "timestamp": "2026-11-05T09:04:34.822Z",
+      "hash": "6e06dbc972be613c49fd6b0c5b9879955af85bfbbed23d16279fa02fd63e7f22"
+    },
+    {
+      "index": 69,
+      "prevHash": "6e06dbc972be613c49fd6b0c5b9879955af85bfbbed23d16279fa02fd63e7f22",
+      "action": "SECURITY_REJECT",
+      "details": "Rejected message for FRIDGE_01: Replay/Order attack detected: nonce 1037 is not strictly monotonic (> 99999) for FRIDGE_01",
+      "actor": "FRIDGE_01",
+      "timestamp": "2026-11-05T09:04:40.072Z",
+      "hash": "c1acc284f7c4dee21f16f9c86377f9c1b548dbe7ab404746dd0a9992a5bb3e5c"
+    },
+    {
+      "index": 70,
+      "prevHash": "c1acc284f7c4dee21f16f9c86377f9c1b548dbe7ab404746dd0a9992a5bb3e5c",
+      "action": "SECURITY_REJECT",
+      "details": "Rejected message for FRIDGE_02: Replay/Order attack detected: nonce 1038 is not strictly monotonic (> 1050) for FRIDGE_02",
+      "actor": "FRIDGE_02",
+      "timestamp": "2026-11-05T09:04:40.075Z",
+      "hash": "687193760d799e174f5c043fe91536b56ffd0cc8bd0d9960ce451dd75ad11f93"
+    },
+    {
+      "index": 71,
+      "prevHash": "687193760d799e174f5c043fe91536b56ffd0cc8bd0d9960ce451dd75ad11f93",
+      "action": "SECURITY_REJECT",
+      "details": "Rejected message for FRIDGE_01: Replay/Order attack detected: nonce 1039 is not strictly monotonic (> 99999) for FRIDGE_01",
+      "actor": "FRIDGE_01",
+      "timestamp": "2026-11-05T09:05:05.986Z",
+      "hash": "13c7481f8ee5044c061e0801466543f88a1c89096b5261f3ee30889469a1e66b"
+    },
+    {
+      "index": 72,
+      "prevHash": "13c7481f8ee5044c061e0801466543f88a1c89096b5261f3ee30889469a1e66b",
+      "action": "SECURITY_REJECT",
+      "details": "Rejected message for FRIDGE_02: Replay/Order attack detected: nonce 1040 is not strictly monotonic (> 1050) for FRIDGE_02",
+      "actor": "FRIDGE_02",
+      "timestamp": "2026-11-05T09:05:05.988Z",
+      "hash": "7ede52f6851ae32174d1d5ee080a655b87709424a8e63a87ec37d61f22bfeb10"
+    },
+    {
+      "index": 73,
+      "prevHash": "7ede52f6851ae32174d1d5ee080a655b87709424a8e63a87ec37d61f22bfeb10",
+      "action": "SECURITY_REJECT",
+      "details": "Rejected message for FRIDGE_01: Replay/Order attack detected: nonce 1041 is not strictly monotonic (> 99999) for FRIDGE_01",
+      "actor": "FRIDGE_01",
+      "timestamp": "2026-11-05T09:05:11.139Z",
+      "hash": "522ba0238a488341e4f41346721151af56781b0e4b2bdd7898f82b9ee8b97efc"
+    },
+    {
+      "index": 74,
+      "prevHash": "522ba0238a488341e4f41346721151af56781b0e4b2bdd7898f82b9ee8b97efc",
+      "action": "SECURITY_REJECT",
+      "details": "Rejected message for FRIDGE_02: Replay/Order attack detected: nonce 1042 is not strictly monotonic (> 1050) for FRIDGE_02",
+      "actor": "FRIDGE_02",
+      "timestamp": "2026-11-05T09:05:11.143Z",
+      "hash": "b7b6ce2746440112fcc446bdc6870e858f04ab3c3e4d911af831a98bac970e2a"
+    },
+    {
+      "index": 75,
+      "prevHash": "b7b6ce2746440112fcc446bdc6870e858f04ab3c3e4d911af831a98bac970e2a",
+      "action": "SECURITY_REJECT",
+      "details": "Rejected message for FRIDGE_01: Replay/Order attack detected: nonce 1043 is not strictly monotonic (> 99999) for FRIDGE_01",
+      "actor": "FRIDGE_01",
+      "timestamp": "2026-11-05T09:05:16.184Z",
+      "hash": "abe33ea32d030c3e55a977c9bb12fd7816fd7aad20bd81a365b4cfb1cafd6a04"
+    },
+    {
+      "index": 76,
+      "prevHash": "abe33ea32d030c3e55a977c9bb12fd7816fd7aad20bd81a365b4cfb1cafd6a04",
+      "action": "SECURITY_REJECT",
+      "details": "Rejected message for FRIDGE_02: Replay/Order attack detected: nonce 1044 is not strictly monotonic (> 1050) for FRIDGE_02",
+      "actor": "FRIDGE_02",
+      "timestamp": "2026-11-05T09:05:16.186Z",
+      "hash": "047bbab5ba69be7a8440283276ea958e17fe018f224f1ea298e01cbde556cac7"
+    },
+    {
+      "index": 77,
+      "prevHash": "047bbab5ba69be7a8440283276ea958e17fe018f224f1ea298e01cbde556cac7",
+      "action": "SECURITY_REJECT",
+      "details": "Rejected message for FRIDGE_01: Replay attack detected: duplicate nonce 1045 already processed for FRIDGE_01",
+      "actor": "FRIDGE_01",
+      "timestamp": "2026-11-05T09:05:21.351Z",
+      "hash": "2ba93a5f5117d4845278786b0125652c854874f360be738c753da10b7c0f0ac5"
+    },
+    {
+      "index": 78,
+      "prevHash": "2ba93a5f5117d4845278786b0125652c854874f360be738c753da10b7c0f0ac5",
+      "action": "SECURITY_REJECT",
+      "details": "Rejected message for FRIDGE_02: Replay attack detected: duplicate nonce 1046 already processed for FRIDGE_02",
+      "actor": "FRIDGE_02",
+      "timestamp": "2026-11-05T09:05:21.353Z",
+      "hash": "6adedc18e0be8059566e9a7b758d63bf0d28b9e7122a86b321de3c521397a678"
+    },
+    {
+      "index": 79,
+      "prevHash": "6adedc18e0be8059566e9a7b758d63bf0d28b9e7122a86b321de3c521397a678",
+      "action": "SECURITY_REJECT",
+      "details": "Rejected message for FRIDGE_01: Replay attack detected: duplicate nonce 1047 already processed for FRIDGE_01",
+      "actor": "FRIDGE_01",
+      "timestamp": "2026-11-05T09:05:27.398Z",
+      "hash": "9aba5472b83443741007bdb4b17803cdf2c2228afdfb572a61224f8785d6fa87"
+    },
+    {
+      "index": 80,
+      "prevHash": "9aba5472b83443741007bdb4b17803cdf2c2228afdfb572a61224f8785d6fa87",
+      "action": "SECURITY_REJECT",
+      "details": "Rejected message for FRIDGE_02: Replay attack detected: duplicate nonce 1048 already processed for FRIDGE_02",
+      "actor": "FRIDGE_02",
+      "timestamp": "2026-11-05T09:05:27.401Z",
+      "hash": "8ed962eeb74419ab8b8b7efe64dffb25ce51dd780e4c9a128837fd470b73662f"
+    },
+    {
+      "index": 81,
+      "prevHash": "8ed962eeb74419ab8b8b7efe64dffb25ce51dd780e4c9a128837fd470b73662f",
+      "action": "SECURITY_REJECT",
+      "details": "Rejected message for FRIDGE_01: Replay attack detected: duplicate nonce 1049 already processed for FRIDGE_01",
+      "actor": "FRIDGE_01",
+      "timestamp": "2026-11-05T09:05:32.636Z",
+      "hash": "146e9a83f7270911c8ed326fccaddedb530aac311bee105ca149f6ed910aae20"
+    },
+    {
+      "index": 82,
+      "prevHash": "146e9a83f7270911c8ed326fccaddedb530aac311bee105ca149f6ed910aae20",
+      "action": "SECURITY_REJECT",
+      "details": "Rejected message for FRIDGE_02: Replay attack detected: duplicate nonce 1050 already processed for FRIDGE_02",
+      "actor": "FRIDGE_02",
+      "timestamp": "2026-11-05T09:05:32.638Z",
+      "hash": "ec228cc6d8b61041511c2ee6ee59b0620f406cd103686e8ecd17a474df59f990"
+    },
+    {
+      "index": 83,
+      "prevHash": "ec228cc6d8b61041511c2ee6ee59b0620f406cd103686e8ecd17a474df59f990",
+      "action": "SECURITY_REJECT",
+      "details": "Rejected message for FRIDGE_01: Replay/Order attack detected: nonce 1051 is not strictly monotonic (> 99999) for FRIDGE_01",
+      "actor": "FRIDGE_01",
+      "timestamp": "2026-11-05T09:07:13.607Z",
+      "hash": "ae1ea96edab4edf4e19e86ff2fb1cf42d79bcd01af3b2d4bb07f8aa41aa3cb4c"
+    },
+    {
+      "index": 84,
+      "prevHash": "ae1ea96edab4edf4e19e86ff2fb1cf42d79bcd01af3b2d4bb07f8aa41aa3cb4c",
+      "action": "SECURITY_REJECT",
+      "details": "Rejected message for FRIDGE_01: Replay/Order attack detected: nonce 1053 is not strictly monotonic (> 99999) for FRIDGE_01",
+      "actor": "FRIDGE_01",
+      "timestamp": "2026-11-05T09:07:20.636Z",
+      "hash": "a81ed9fae41074483f8a124d44b786e92f76011065c7f5b0f10db72aaf81d0a1"
+    },
+    {
+      "index": 85,
+      "prevHash": "a81ed9fae41074483f8a124d44b786e92f76011065c7f5b0f10db72aaf81d0a1",
+      "action": "SECURITY_REJECT",
+      "details": "Rejected message for FRIDGE_01: Replay/Order attack detected: nonce 1055 is not strictly monotonic (> 99999) for FRIDGE_01",
+      "actor": "FRIDGE_01",
+      "timestamp": "2026-11-05T09:07:25.168Z",
+      "hash": "8153b7dda8afc63ef989df96056a44b0d02366f47011cd23de7687d9df121efb"
+    },
+    {
+      "index": 86,
+      "prevHash": "8153b7dda8afc63ef989df96056a44b0d02366f47011cd23de7687d9df121efb",
+      "action": "SECURITY_REJECT",
+      "details": "Rejected message for FRIDGE_01: Replay/Order attack detected: nonce 1057 is not strictly monotonic (> 99999) for FRIDGE_01",
+      "actor": "FRIDGE_01",
+      "timestamp": "2026-11-05T09:07:30.538Z",
+      "hash": "ab6bf68b634d5ac6924bb971aed0314a205ff2cf5d46dbfb21147290144457dd"
+    },
+    {
+      "index": 87,
+      "prevHash": "ab6bf68b634d5ac6924bb971aed0314a205ff2cf5d46dbfb21147290144457dd",
+      "action": "SECURITY_REJECT",
+      "details": "Rejected message for FRIDGE_01: Replay/Order attack detected: nonce 1059 is not strictly monotonic (> 99999) for FRIDGE_01",
+      "actor": "FRIDGE_01",
+      "timestamp": "2026-11-05T09:07:34.182Z",
+      "hash": "b262e18c24d0af3a8bfe2e68fe4e096d74910221fce3ce85cea473e77755ffa8"
+    },
+    {
+      "index": 88,
+      "prevHash": "b262e18c24d0af3a8bfe2e68fe4e096d74910221fce3ce85cea473e77755ffa8",
+      "action": "SECURITY_REJECT",
+      "details": "Rejected message for FRIDGE_01: Replay/Order attack detected: nonce 1061 is not strictly monotonic (> 99999) for FRIDGE_01",
+      "actor": "FRIDGE_01",
+      "timestamp": "2026-11-05T09:07:38.334Z",
+      "hash": "ea44aac78082252cea715414b886e0476e55306121eae15af20e4687375971df"
+    },
+    {
+      "index": 89,
+      "prevHash": "ea44aac78082252cea715414b886e0476e55306121eae15af20e4687375971df",
+      "action": "SECURITY_REJECT",
+      "details": "Rejected message for FRIDGE_01: Replay/Order attack detected: nonce 1001 is not strictly monotonic (> 99999) for FRIDGE_01",
+      "actor": "FRIDGE_01",
+      "timestamp": "2026-11-05T09:07:56.083Z",
+      "hash": "e37296aefc8d89cabcc25bc57f7d30d666276b93f097be7b85f337e8e005b674"
+    },
+    {
+      "index": 90,
+      "prevHash": "e37296aefc8d89cabcc25bc57f7d30d666276b93f097be7b85f337e8e005b674",
+      "action": "SECURITY_REJECT",
+      "details": "Rejected message for FRIDGE_01: Replay/Order attack detected: nonce 1003 is not strictly monotonic (> 99999) for FRIDGE_01",
+      "actor": "FRIDGE_01",
+      "timestamp": "2026-11-05T09:07:56.084Z",
+      "hash": "ce2be7587213d202d57fa0c9af997fc838d3c2bff71e03c58f06dbc0f54fb569"
+    },
+    {
+      "index": 91,
+      "prevHash": "ce2be7587213d202d57fa0c9af997fc838d3c2bff71e03c58f06dbc0f54fb569",
+      "action": "SECURITY_REJECT",
+      "details": "Rejected message for FRIDGE_02: Replay/Order attack detected: nonce 1002 is not strictly monotonic (> 1062) for FRIDGE_02",
+      "actor": "FRIDGE_02",
+      "timestamp": "2026-11-05T09:07:56.086Z",
+      "hash": "8c7e5f3fda4aa8d0be6b0427cc71b8de2bb3fc297e28042768d6411e02cf5eb4"
+    },
+    {
+      "index": 92,
+      "prevHash": "8c7e5f3fda4aa8d0be6b0427cc71b8de2bb3fc297e28042768d6411e02cf5eb4",
+      "action": "SECURITY_REJECT",
+      "details": "Rejected message for FRIDGE_02: Replay/Order attack detected: nonce 1004 is not strictly monotonic (> 1062) for FRIDGE_02",
+      "actor": "FRIDGE_02",
+      "timestamp": "2026-11-05T09:07:56.087Z",
+      "hash": "e80034b5cc1f22dbd56e2a95b500ae6c7702012eb17c1a5d68ab2a08cf49d3ea"
+    },
+    {
+      "index": 93,
+      "prevHash": "e80034b5cc1f22dbd56e2a95b500ae6c7702012eb17c1a5d68ab2a08cf49d3ea",
+      "action": "SECURITY_REJECT",
+      "details": "Rejected message for FRIDGE_01: Replay/Order attack detected: nonce 1005 is not strictly monotonic (> 99999) for FRIDGE_01",
+      "actor": "FRIDGE_01",
+      "timestamp": "2026-11-05T09:08:01.330Z",
+      "hash": "f4e7d0d97eba520b24f9e69c65bb88daf314ecb3f4b88bfe6235229de2bd83ae"
+    },
+    {
+      "index": 94,
+      "prevHash": "f4e7d0d97eba520b24f9e69c65bb88daf314ecb3f4b88bfe6235229de2bd83ae",
+      "action": "SECURITY_REJECT",
+      "details": "Rejected message for FRIDGE_02: Replay/Order attack detected: nonce 1006 is not strictly monotonic (> 1062) for FRIDGE_02",
+      "actor": "FRIDGE_02",
+      "timestamp": "2026-11-05T09:08:01.331Z",
+      "hash": "88914a9722790476c34a4a18ea285c4b65043ae74e5cd809b34ccffc74d48d1d"
+    },
+    {
+      "index": 95,
+      "prevHash": "88914a9722790476c34a4a18ea285c4b65043ae74e5cd809b34ccffc74d48d1d",
+      "action": "SECURITY_REJECT",
+      "details": "Rejected message for FRIDGE_01: Replay/Order attack detected: nonce 1007 is not strictly monotonic (> 99999) for FRIDGE_01",
+      "actor": "FRIDGE_01",
+      "timestamp": "2026-11-05T09:08:06.413Z",
+      "hash": "aa91139b6d70c4afad885bf7d0d951410164ba6684a45453904a38bdb8553a83"
+    },
+    {
+      "index": 96,
+      "prevHash": "aa91139b6d70c4afad885bf7d0d951410164ba6684a45453904a38bdb8553a83",
+      "action": "SECURITY_REJECT",
+      "details": "Rejected message for FRIDGE_02: Replay/Order attack detected: nonce 1008 is not strictly monotonic (> 1062) for FRIDGE_02",
+      "actor": "FRIDGE_02",
+      "timestamp": "2026-11-05T09:08:06.415Z",
+      "hash": "72f1730302303e188c0c44d7ab7f583e825da8a51cd1fd10e8f70486b10002bf"
+    },
+    {
+      "index": 97,
+      "prevHash": "72f1730302303e188c0c44d7ab7f583e825da8a51cd1fd10e8f70486b10002bf",
+      "action": "USER_LOGIN",
+      "details": "User pharmacist logged in as Pharmacist",
+      "actor": "pharmacist",
+      "timestamp": "2026-11-05T09:08:59.416Z",
+      "hash": "3af9712cbc2943d692c9097e315f599cf0e5a2a950226010ea2d1de6512a4069"
+    },
+    {
+      "index": 98,
+      "prevHash": "3af9712cbc2943d692c9097e315f599cf0e5a2a950226010ea2d1de6512a4069",
+      "action": "USER_LOGIN",
+      "details": "User admin logged in as Admin",
+      "actor": "admin",
+      "timestamp": "2026-11-05T09:09:31.814Z",
+      "hash": "920f9ae23d6c4012b6252484e42258ccbc6ce851c1bb46ae5e3932ceab8cfdaa"
+    },
+    {
+      "index": 99,
+      "prevHash": "920f9ae23d6c4012b6252484e42258ccbc6ce851c1bb46ae5e3932ceab8cfdaa",
+      "action": "USER_LOGIN",
+      "details": "User pharmacist logged in as Pharmacist",
+      "actor": "pharmacist",
+      "timestamp": "2026-11-05T09:09:48.472Z",
+      "hash": "59018f7e47921bccf7054719b202c4ace092dfb492a5f355dae0e535fb3eea01"
+    },
+    {
+      "index": 100,
+      "prevHash": "59018f7e47921bccf7054719b202c4ace092dfb492a5f355dae0e535fb3eea01",
+      "action": "BATCH_MOVE",
+      "details": "Moved batch BATCH-POL-003 from FRIDGE_02 to FRIDGE_01",
+      "actor": "pharmacist",
+      "timestamp": "2026-11-05T09:09:59.205Z",
+      "hash": "11d49c09eb9a6ae3adc0ab66b5d0c9a4a81a6699dbf149f3e65d8a7c1b587d67"
+    },
+    {
+      "index": 101,
+      "prevHash": "11d49c09eb9a6ae3adc0ab66b5d0c9a4a81a6699dbf149f3e65d8a7c1b587d67",
+      "action": "SECURITY_REJECT",
+      "details": "Rejected message for FRIDGE_01: Replay/Order attack detected: nonce 1001 is not strictly monotonic (> 99999) for FRIDGE_01",
+      "actor": "FRIDGE_01",
+      "timestamp": "2026-11-05T09:12:44.996Z",
+      "hash": "9c8e8f9374a590f865245795b0ef3299dcd6dc9931e14d5ab4402de04760032b"
+    },
+    {
+      "index": 102,
+      "prevHash": "9c8e8f9374a590f865245795b0ef3299dcd6dc9931e14d5ab4402de04760032b",
+      "action": "SECURITY_REJECT",
+      "details": "Rejected message for FRIDGE_01: Replay/Order attack detected: nonce 1003 is not strictly monotonic (> 99999) for FRIDGE_01",
+      "actor": "FRIDGE_01",
+      "timestamp": "2026-11-05T09:12:44.999Z",
+      "hash": "8dbfaa6753fd04624aa640851e6d84c8518fa2154edc849d7ffbb5f85a551b42"
+    },
+    {
+      "index": 103,
+      "prevHash": "8dbfaa6753fd04624aa640851e6d84c8518fa2154edc849d7ffbb5f85a551b42",
+      "action": "SECURITY_REJECT",
+      "details": "Rejected message for FRIDGE_02: Replay/Order attack detected: nonce 1002 is not strictly monotonic (> 1062) for FRIDGE_02",
+      "actor": "FRIDGE_02",
+      "timestamp": "2026-11-05T09:12:45.050Z",
+      "hash": "c77099532eeabd92094d134ebc0b3ff476cb5930c733439bfa776b86e002e5a1"
+    },
+    {
+      "index": 104,
+      "prevHash": "c77099532eeabd92094d134ebc0b3ff476cb5930c733439bfa776b86e002e5a1",
+      "action": "SECURITY_REJECT",
+      "details": "Rejected message for FRIDGE_02: Replay/Order attack detected: nonce 1004 is not strictly monotonic (> 1062) for FRIDGE_02",
+      "actor": "FRIDGE_02",
+      "timestamp": "2026-11-05T09:12:45.051Z",
+      "hash": "020e5f105aeb60a1065ee9b0965998d0ad59f9a38427bce5c1ac421153e0ac1e"
+    },
+    {
+      "index": 105,
+      "prevHash": "020e5f105aeb60a1065ee9b0965998d0ad59f9a38427bce5c1ac421153e0ac1e",
+      "action": "SECURITY_REJECT",
+      "details": "Rejected message for FRIDGE_01: Replay/Order attack detected: nonce 1005 is not strictly monotonic (> 99999) for FRIDGE_01",
+      "actor": "FRIDGE_01",
+      "timestamp": "2026-11-05T09:12:49.853Z",
+      "hash": "ba4c48fb4d1c65d8acafaa5c9acdc9e2b167f99a804a2c97b27b6b4cee7df8ac"
+    },
+    {
+      "index": 106,
+      "prevHash": "ba4c48fb4d1c65d8acafaa5c9acdc9e2b167f99a804a2c97b27b6b4cee7df8ac",
+      "action": "SECURITY_REJECT",
+      "details": "Rejected message for FRIDGE_02: Replay/Order attack detected: nonce 1006 is not strictly monotonic (> 1062) for FRIDGE_02",
+      "actor": "FRIDGE_02",
+      "timestamp": "2026-11-05T09:12:49.854Z",
+      "hash": "b421b96b0140e5c4ca81678bc3c9179255f25cd66053f2b448dd6d5160b7652b"
+    },
+    {
+      "index": 107,
+      "prevHash": "b421b96b0140e5c4ca81678bc3c9179255f25cd66053f2b448dd6d5160b7652b",
+      "action": "SECURITY_REJECT",
+      "details": "Rejected message for FRIDGE_01: Replay/Order attack detected: nonce 1007 is not strictly monotonic (> 99999) for FRIDGE_01",
+      "actor": "FRIDGE_01",
+      "timestamp": "2026-11-05T09:12:54.852Z",
+      "hash": "4f145321b535f4998823eb0587a85af839767e80861883a6a6ac1a52a81f1a71"
+    },
+    {
+      "index": 108,
+      "prevHash": "4f145321b535f4998823eb0587a85af839767e80861883a6a6ac1a52a81f1a71",
+      "action": "SECURITY_REJECT",
+      "details": "Rejected message for FRIDGE_02: Replay/Order attack detected: nonce 1008 is not strictly monotonic (> 1062) for FRIDGE_02",
+      "actor": "FRIDGE_02",
+      "timestamp": "2026-11-05T09:12:54.854Z",
+      "hash": "75ba89a1069f8b238d6cf64de244b2bad753877410f9a26fa67aaf2ce304bb5d"
+    },
+    {
+      "index": 109,
+      "prevHash": "75ba89a1069f8b238d6cf64de244b2bad753877410f9a26fa67aaf2ce304bb5d",
+      "action": "SECURITY_REJECT",
+      "details": "Rejected message for FRIDGE_01: Replay/Order attack detected: nonce 1009 is not strictly monotonic (> 99999) for FRIDGE_01",
+      "actor": "FRIDGE_01",
+      "timestamp": "2026-11-05T09:14:12.485Z",
+      "hash": "870b30dafe295e8810fd29005b4f4665a4abe229a478965e62acb1fcca34cf58"
+    },
+    {
+      "index": 110,
+      "prevHash": "870b30dafe295e8810fd29005b4f4665a4abe229a478965e62acb1fcca34cf58",
+      "action": "SECURITY_REJECT",
+      "details": "Rejected message for FRIDGE_02: Replay/Order attack detected: nonce 1010 is not strictly monotonic (> 1062) for FRIDGE_02",
+      "actor": "FRIDGE_02",
+      "timestamp": "2026-11-05T09:14:12.488Z",
+      "hash": "e5cd34aa7eb35e64d44046f75acc7b6654f244fdca0bda15fc34601a8ce3940f"
+    },
+    {
+      "index": 111,
+      "prevHash": "e5cd34aa7eb35e64d44046f75acc7b6654f244fdca0bda15fc34601a8ce3940f",
+      "action": "SECURITY_REJECT",
+      "details": "Rejected message for FRIDGE_01: Replay/Order attack detected: nonce 1011 is not strictly monotonic (> 99999) for FRIDGE_01",
+      "actor": "FRIDGE_01",
+      "timestamp": "2026-11-05T09:14:17.543Z",
+      "hash": "3a00847c051971ec3e91ab3fd9e6e1c73ffa865e7a8059f2878aba5e1d7f06ab"
+    },
+    {
+      "index": 112,
+      "prevHash": "3a00847c051971ec3e91ab3fd9e6e1c73ffa865e7a8059f2878aba5e1d7f06ab",
+      "action": "SECURITY_REJECT",
+      "details": "Rejected message for FRIDGE_02: Replay/Order attack detected: nonce 1012 is not strictly monotonic (> 1062) for FRIDGE_02",
+      "actor": "FRIDGE_02",
+      "timestamp": "2026-11-05T09:14:17.545Z",
+      "hash": "af8be2749b31357c115b846f6c79ad27df3c876db913624aca03c2fb44190728"
+    }
+  ],
+  "alerts": [
+    {
+      "id": "FRIDGE_02_door_29897827",
+      "type": "DOOR_ALARM",
+      "message": "Door on Secondary Medicine Cooler B (FRIDGE_02) has been open for > 60 seconds! Current Temp: 24°C.",
+      "timestamp": "2026-11-05T09:07:20.623Z"
+    }
+  ]
+}

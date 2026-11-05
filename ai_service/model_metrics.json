@@ -1,0 +1,10 @@
+{
+  "dataset_records": 8460,
+  "train_records": 6768,
+  "test_records": 1692,
+  "mae_30m_celsius": 0.914,
+  "r2_score": 0.683,
+  "breach_precision": 93.4,
+  "breach_recall": 73.9,
+  "timestamp": "2026-11-05T14:14:56.458972"
+}
