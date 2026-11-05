@@ -155,6 +155,7 @@ Pharmacists can execute the move in **1 click**, instantly updating device routi
 | **Circuit Diagram** | [`firmware/diagram.json`](file:///e:/BUBT%20Techathon/firmware/diagram.json) | Complete dual-fridge Wokwi wiring and component schema |
 | **Web Dashboard** | `http://localhost:5000` | Full-stack interface (RBAC, Hash Chain, Public QR) |
 | **AI Model & Metrics** | [`ai_service/`](file:///e:/BUBT%20Techathon/ai_service/) | `predict.py`, `predict_cli.py`, `model_metrics.json`, `AI_REPORT.md` |
+| **GitHub Repository** | `https://github.com/0001shahriar-source/coldchain-monitor` | Complete production source code (Backend, Frontend, Firmware, AI) |
 | **Wokwi Online Demo Link** | `https://wokwi.com/projects/479836419904773121` | Interactive dual-chamber hardware simulation with OLED, NTCs & buzzers |
 | **Demo Pitch Video (MP4)** | `https://drive.google.com/` *(Paste your Drive/YouTube link)* | 3-Minute walkthrough of hardware, software & AI |
 
