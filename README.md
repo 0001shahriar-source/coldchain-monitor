@@ -4,6 +4,19 @@ A complete IoT Cold-Chain Monitoring System, Cryptographic Ledger, Full-Stack We
 
 ---
 
+## 📊 System Architecture, Methodology & Decision Flow
+
+### 1. System Architecture
+![System Architecture](bubt%20hechathon/system%20architeture.jpg)
+
+### 2. Five-Stage Methodology
+![Methodology](bubt%20hechathon/methodology.jpg)
+
+### 3. Decision Logic Flowchart
+![Flowchart](bubt%20hechathon/flow_chart.jpg)
+
+---
+
 ## 🚀 System Architecture & Completed Deliverables
 
 ### 1. ESP32 Hardware Firmware (`firmware/wokwi_main.ino`)
