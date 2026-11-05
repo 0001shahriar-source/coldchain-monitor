@@ -81,11 +81,11 @@ def create_demo_links_doc():
     p_intro.paragraph_format.line_spacing = 1.15
     p_intro.add_run(
         "Judges and evaluators can interact with the complete ColdChain ecosystem through the online simulator, "
-        "live web dashboard, and cryptographic audit tools listed below:"
+        "live web dashboard, official open-source GitHub repository, and cryptographic audit tools listed below:"
     )
 
-    # Links Table
-    table = doc.add_table(rows=5, cols=3)
+    # Links Table (Now 6 rows including GitHub)
+    table = doc.add_table(rows=6, cols=3)
     table.alignment = WD_TABLE_ALIGNMENT.CENTER
     table.autofit = False
 
@@ -102,6 +102,10 @@ def create_demo_links_doc():
             r.font.color.rgb = RGBColor(255, 255, 255)
 
     data = [
+        ("GitHub Source Code Repository",
+         "https://github.com/0001shahriar-source/coldchain-monitor",
+         "Full production codebase: firmware (wokwi_main.ino), backend API, web frontend, AI prediction engine, and system architecture diagrams."),
+
         ("Wokwi Online Hardware Simulator", 
          "https://wokwi.com/projects/479836419904773121", 
          "Click 'Play' to test live dual NTC temp sliders, door switches, compressor relays, buzzers & real-time OLED status display."),
@@ -166,8 +170,7 @@ def create_demo_links_doc():
 
     out_file = os.path.abspath("ColdChain_Demo_Links.docx")
     doc.save(out_file)
-    print(f"Generated standalone demo links document: {out_file}")
+    print(f"Generated standalone demo links document with GitHub: {out_file}")
 
 if __name__ == "__main__":
     create_demo_links_doc()
-
